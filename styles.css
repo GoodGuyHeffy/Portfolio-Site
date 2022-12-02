@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+    background-color: #141517;
+    display:flex;
+    align-items: center;
+    justify-content : space-between;
+    position: fixed;
+    z-index: 999;
+  }
+  
+  .header h1 {
+     margin: 0 0 0 25px;
+     font-family: 'Chau Philomene One';
+     color: #0083ad;
+     font-size: 45px;
+  }
+
+  .header h1:hover {
+    color: #01e0e2;
+    text-transform: uppercase;
+    transition-duration: 1000ms;
+  }
+
+  .header ul { 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 1rem 0px 1rem;
+    flex-wrap: wrap;
+  }
+ 
+  li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 60px;
+    display: inline-block;
+    font-family: 'Chau Philomene One';
+    font-size: 30px;
+    color: #0083ad;
+    transition-duration: 1000ms;
+}    
+   
+li a:hover {
+  color: #01e0e2;
+  text-transform: uppercase;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./resources/images/new\ pine\ img.jpg");
+    height: 1000px;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chau Philomene One';
+}
+
+.hero h5,
+.hero h1,
+.hero p {
+    font-family: 'Chau Philomene One';
+    color: #0083ad;
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero p {
+  font-size: 50px;
+}
+
+.hero h5 {
+ font-size: 40px;
+}
+ 
+.hero :hover {
+    color: #02f1e4;
+    text-transform: uppercase;
+    transition-duration: 1000ms;
+}
+
+.about {
+    height: 1000px;
+    display: flex;
+    background-color: #141517;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about h1 {  
+    text-align: center;
+    align-items: center;
+    font-family: 'Chau Philomene One';
+    color: white;
+    font-size: 60px;
+    padding: 50px 0px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.about span {
+    color: #0083ad;
+}
+.about p {
+    text-align: center;
+    font-family: 'Chau Philomene One';
+    color: white;
+    font-size: 32px;
+    padding: 0px 30px 0px 30px;
+    margin: 0 auto;
+}
+
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background-color: #141517;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background-color: #141517;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #141517;
+}
+
+footer p {
+    font-family: 'Chau Philomene One';
+    text-align: center;
+    font-size: 25px;
+    color: #0083ad;
+}
+
+
+
+
+
+
+/*Contact Form */
+
+
+.container h1 {
+  text-align: center;
+color: black;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin: 0;
+font-family: 'Cabin', sans-serif;
+font-size: 25px;
+padding: 30px;
+}
+
+.container h3 {
+  text-align: center;
+  color: black;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  padding: 10px;
+}
+
+.container h3 a {
+  text-decoration: none;
+  color: #22A7F0;
+}
+
+.container {
+  height: auto;
+  width: 50%;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+form {
+  font-family: 'Cabin', sans-serif;
+  padding: 0;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.feedback-input {
+  color: #000;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 22px;
+  background-color: none;
+  padding: 13px 13px 13px 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2px solid #22A7F0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.feedback-input:focus {
+  box-shadow: 0;
+  color: #3498db;
+  transition: .4s ease;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding: 13px 13px 13px 13px;
+}
+
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#button-blue {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #0083ad;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: -4px;
+  font-weight: 700;
+  transition: .3s ease;
+}
+
+#button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0083ad;
+  background: #22A7F0;
+}
+
+.submit:hover {
+  color: #22A7F0;
+}
+
+/* Project cards */
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 250px;
+  height: auto;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all .3s ease-in;
+}
+.card > *{
+  padding: 10px;
+}
+.card .card-image{
+  height: 150px;
+  width: 150px;
+  border: 5px double #022a3c;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;    
+}
+.card .card-title{
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px #262654;
+}
+.card:nth-child(1) .card-image{
+  background-image: url();
+}
+.card:nth-child(2) .card-image{
+  background-image: url();
+}
+.card:nth-child(3) .card-image{
+  background-image: url();
+}
+.card:hover{
+  background: #0083ad;
+  color: #fff;
+  box-shadow: 0px 0px 11px 5px #000000;
+
+}
+
+.card .card-text{
+  line-height: 20px;
+  font-size: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact Form */
+
+
+.container h1 {
+    text-align: center;
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  padding: 30px;
+}
+
+.container h3 {
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px;
+  }
+
+  .container h3 a {
+    text-decoration: none;
+    color: #141517;
+  }
+
+.container {
+    height: auto;
+    width: 50%;
+    font-family: 'Cabin', sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  form {
+    font-family: 'Cabin', sans-serif;
+    padding: 0;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-input {
+    color: #000;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 0;
+    margin-right: 0;
+    line-height: 22px;
+    background-color: none;
+    padding: 13px 13px 13px 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 2px solid #141517;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .feedback-input:focus {
+    box-shadow: 0;
+    color: #141517;
+    transition: .4s ease;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding: 13px 13px 13px 13px;
+  }
+  
+  .focused {
+    color: #141517;
+    border: #141517 solid 3px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  
+  #button-blue {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #141517;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: -4px;
+    font-weight: 700;
+    transition: .3s ease;
+  }
+  
+  #button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    background: #141517;
+  }
+  
+  .submit:hover {
+    color: #141517;
+  }
+
+
+
+
+/* Media Queries */
+
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .hero h5,
+  .hero h1,
+  .hero p {
+      text-align: center;
+      color: #00d7e0;
+  }
+
+  .container {
+    height: auto;
+    width: 80%;
+    font-family: 'Cabin', sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .header ul {
+    flex-wrap: nowrap;
+  }
+
+ .hero {
+  height: 900px;
+  margin: auto auto;
+  padding: 20px 0px 0px 0px;
+ }
+
+ .header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 32px;
+  padding-right: 20px;
+  padding-left: 2px;
+ }
+ 
+ .hide {
+  display: none;
+ }
+
+ .hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./resources/images/HD-wallpaper-milky-way-pine-tree-galaxy-milkyway-night-pinetree-sky-stars-universe.jpg");
+  height: 900px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Chau Philomene One';
+  
+}
+li a:hover {
+  color: #01e0e2;
+  text-transform: none;
+}
+}
+
+/* tablet viewport */ 
+
+@media only screen and (max-width: 770px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./resources/images/HD-wallpaper-milky-way-pine-tree-galaxy-milkyway-night-pinetree-sky-stars-universe.jpg");
+    height: 900px;
+    width: 100%;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chau Philomene One';
+    
+  }
+}
+
+
+
+
+
+
+
